@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Edison Loor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- remove FOUC -->
+<style>
+  .js body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<script>
+  document.getElementsByTagName("html")[0].classList.add('js');
+</script>
+
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i" rel="stylesheet">
+
+<nav class="nav">
+  <div class="nav--bar">
+    <!-- nav brand -->
+    <span class="nav--brand"><a href="#">Edison Loor</a></span>
+
+    <!-- nav toggle -->
+    <button class="nav--toggle">
+      <span class="nav--label-container">
+        <span class="nav--label">Menu</span>
+        <span class="nav--label">Close</span>
+      </span>
+      <span class="nav--navicon">
+        <span class="nav--navicon-line"></span>
+        <span class="nav--navicon-line"></span>
+        <span class="nav--navicon-line"></span>  
+      </span>
+    </button>
+  </div>
+
+  <!-- nav menu backdrop -->
+  <div class="nav--menu-backdrop"></div>
+  
+  <!-- nav menu bg -->
+  <div class="nav--menu-bg"></div>
+
+  <!-- nav menu -->
+  <div class="nav--menu">
+    <div class="nav--menu-container">
+      <ul>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- intro content -->
+<div class="intro-container">
+  <div class="intro-initials center-xy">
+    <span>EL</span>
+  </div>
+  <div class="intro-title center-xy">
+    <span>Fullstack Developer</span>
+  </div>
+
+  <!-- arrow -->
+  <a href="#section-about">
+    <div class="intro-arrow-container">
+      <div class="intro-arrow">
+        <span class="intro-arrow--line"></span>
+        <span class="intro-arrow--tip intro-arrow--tip-right"></span>
+        <span class="intro-arrow--tip intro-arrow--tip-left"></span>
+      </div>
+    </div>
+  </a>
+</div>
+
+<!-- other content -->
+<div class="main-content">
+  <section class="section section--about" id="section-about">
+    <div class="container">
+      <div class="profile-img-container" tabindex="0">
+        <img src="../img/EdisonLoor_Mountain.jpg" alt="Hobby" class="profile-img img-fluid">
+        <img src="../img/Foto Edison Loor.jpg" alt="Edison Loor" class="profile-img img-fluid">
+      </div>
+
+      <div class="section-text-container about-text-container">
+        <h1 class="section-title">About me</h1>
+        <p>I’m a fullstack developer from Quito, Ecuador,currently based in Houston,TX. with experience in JavaScript and NodeJS. I am currently enrolled in a Fullstack Web Development bootcamp.</p>
+        <div class="spacer-sm-y">
+          <a href="#" class="link-arrow">Learn more <span class="link-arrow-icon">→</span></a>
+        </div>
+      </div>
+      
+      <!-- spacer -->
+      <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <footer class="footer-main">
+    <div class="container">
+      <p class="footer-text">&copy; <span class="current-year">2023</span> Selçuk Cura
+      </p>
+      <ul class="icon-container">
+        <!-- SVG icons from: https://codepen.io/ruandre/pen/howFi?editors=0110 -->
+        <li><a href="https://www.linkedin.com/in/edison-l00r/" class="icon icon-linkedin" title="LinkedIn" target="_blank">
+          <img src="../img/linkedin_icon.svg" alt="linkedIn">
+        </a></li>
+        <li><a href="https://github.com/EdsnLoor" class="icon icon-twitter" title="Github" target="_blank">
+          <img src="../img/github_icon.svg" alt="github">
+        </a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- /footer -->
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/classlist/1.2.20171210/classList.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/15.1.3/smooth-scroll.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
