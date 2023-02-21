@@ -520,6 +520,47 @@ input[type="submit"] {
   margin-bottom: 8px;
 }
 
+@media (min-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+}
+@media (min-width: 750px){
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+@media (min-width: 1000px){
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+.grid-item {
+  color: #00796B;
+  width: auto;
+  min-height: auto;
+  margin: 0;
+}
+
+.grid-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+/* Style for project description */
+.grid-description {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 @media screen and (min-width: 576px) {
   .footer-main .footer-text {
     margin-bottom: 0;
