@@ -416,6 +416,42 @@ body {
   display: inline-block;
 }
 
+.section--about .about-table-container {
+  vertical-align: middle;
+  max-width: 580px;
+  display: inline-block;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #00796B;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Set the width of the table columns */
+th:first-child,
+td:first-child {
+  width: 40%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 30%;
+}
+
 .icon-container {
   display: block;
   font-size: 0;
@@ -447,6 +483,31 @@ body {
   width: 100%;
 }
 
+form {
+  width: 500px;
+  margin: 0 auto;
+}
+label {
+  text-align: left;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input[type="submit"] {
+  background-color: #00796B;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .footer-main {
   color: #C8CEDA;
   width: 100%;
@@ -457,6 +518,47 @@ body {
   vertical-align: middle;
   margin-top: 0;
   margin-bottom: 8px;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+}
+@media (min-width: 750px){
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+@media (min-width: 1000px){
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+.grid-item {
+  color: #00796B;
+  width: auto;
+  min-height: auto;
+  margin: 0;
+}
+
+.grid-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+/* Style for project description */
+.grid-description {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 @media screen and (min-width: 576px) {
@@ -489,6 +591,6 @@ body {
     margin-bottom: 0;
   }
   .section--about .about-text-container {
-    text-align: left;
+    text-align: justify;
   }
 }
