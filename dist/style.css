@@ -318,11 +318,15 @@ body {
   bottom: 30px;
   transform: translateX(-50%);
   position: absolute;
+  text-align: center;
+  color: white;
 }
 .intro-container .intro-arrow-container .intro-arrow {
   width: 23px;
   height: 32px;
   position: relative;
+  display: inline-block;
+  margin: 0 auto;
 }
 .intro-container .intro-arrow-container .intro-arrow .intro-arrow--line {
   background-color: #fff;
